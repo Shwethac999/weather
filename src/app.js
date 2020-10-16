@@ -39,7 +39,7 @@ app.get('',(req,res)=>{
      geocode(req.query.address, (error, {latitude,longitude,location})=>{
           if(error){
               return res.send({error})
-          }rs
+          }
           
                
                forecast(latitude,longitude,(error, forecastData)=>{
