@@ -1,7 +1,7 @@
 const request=require('request')
 
 const geoCode=(address, callback)=>{
-    const url='https://api.mapbox.com/geocoding/v5/mapbox.places/bengaluru.json?access_token=pk.eyJ1Ijoic2h3ZXRoYTEyMyIsImEiOiJja2ZpZjBlb2cwbHR6MnVwODI0bWQ2N2piIn0.kqBgY0bK2MyCwfb2eirhUA'
+    const url='https://api.mapbox.com/geocoding/v5/mapbox.places/'+address+'.json?access_token=pk.eyJ1Ijoic2h3ZXRoYTEyMyIsImEiOiJja2ZpZjBlb2cwbHR6MnVwODI0bWQ2N2piIn0.kqBgY0bK2MyCwfb2eirhUA'
     request({url , json:true },(error, {body})=>{
     //    console.log(response.body);
 
